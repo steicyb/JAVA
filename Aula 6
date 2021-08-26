@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class AlunoResetLeituraTeclado {
+    public static void main (String[] args){
+        Scanner cwi = new Scanner(System.in);
+        System.out.println("Qual seu nome? ");
+        String nome = cwi.nextLine();
+        System.out.println("Sou aluno do Level 01 do CWI Reset! Me chamo " + nome);
+    }
+}
