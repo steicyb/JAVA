@@ -1,0 +1,52 @@
+//Exercise 1 - Ler dois valores e imprimir a soma
+
+import java.util.Scanner;
+
+public class Aula07 {
+    public static void main(String[] args){
+        Scanner adicao = new Scanner(System.in);
+        System.out.println("Digite um número:");
+        double primeiro = adicao.nextDouble();
+        System.out.println("Digite outro número:");
+        double segundo = adicao.nextDouble();
+        double soma = primeiro + segundo;
+        System.out.println("A soma entre os dois valores é de:" + soma);
+    }
+}
+
+
+
+//Exercise 2 - Média de 4 valores
+
+import java.util.Scanner;
+
+public class Media {
+    public static void main(String[] args){
+        System.out.println("Digite as 4 notas para o cálculo da média:");
+        Scanner media = new Scanner(System.in);
+        double um = media.nextDouble();
+        double dois = media.nextDouble();
+        double tres = media.nextDouble();
+        double quatro = media.nextDouble();
+        double mediaFinal = (um + dois + tres + quatro) / 4;
+        System.out.println("Sua média é:" + mediaFinal);
+    }
+}
+
+
+
+//Exercise 3 - Calculo do salário
+
+import java.util.Scanner;
+
+public class Salario {
+    public static void main(String[] args){
+        System.out.println("Quantas horas você trabalha por mês:");
+        Scanner salario = new Scanner(System.in);
+        int hora = salario.nextInt();
+        System.out.println("Quanto você ganha por hora:");
+        double valor = salario.nextDouble();
+        double total = valor * hora;
+        System.out.println("Seu salário será de R$" + total);
+    }
+}
