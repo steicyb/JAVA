@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class cincoValores {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite a seguir 5 valores para descobrir qual é o maior");
+        int numero;
+        int maior = Integer.MIN_VALUE;
+
+        for (int i = 0; i < 5; i++){
+            System.out.println("Digite um número:");
+            numero = scan.nextInt();
+
+            if (numero > maior){
+                maior = numero;
+            }
+        }
+
+        System.out.println("O maior número informado foi: " + maior);
+
+    }
+}
