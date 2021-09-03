@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Aula07 {
+    public static void main(String[] args){
+        Scanner adicao = new Scanner(System.in);
+        System.out.println("Digite um número:");
+        double primeiro = adicao.nextDouble();
+        System.out.println("Digite outro número:");
+        double segundo = adicao.nextDouble();
+        double soma = primeiro + segundo;
+        System.out.println("A soma entre os dois valores é de:" + soma);
+    }
+}
