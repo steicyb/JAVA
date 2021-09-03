@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class doWhile {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite uma nota entre 0 e 10: ");
+
+        boolean notaValida = false;
+
+        do {
+            double nota = scan.nextInt();
+            if(nota >= 0 && nota <= 10){
+                notaValida = true;
+                System.out.println("Tudo ok!! Sua nota é " + nota);
+            } else {
+                System.out.println("Valor Inválido!!! Digite uma nota entre 0 e 10: ");
+            }
+
+        } while (!notaValida);
+    }
+}
