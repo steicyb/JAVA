@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Media {
+    public static void main(String[] args){
+        System.out.println("Digite as 4 notas para o cálculo da média:");
+        Scanner media = new Scanner(System.in);
+        double um = media.nextDouble();
+        double dois = media.nextDouble();
+        double tres = media.nextDouble();
+        double quatro = media.nextDouble();
+        double mediaFinal = (um + dois + tres + quatro) / 4;
+        System.out.println("Sua média é:" + mediaFinal);
+    }
+}
