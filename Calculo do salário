@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Salario {
+    public static void main(String[] args){
+        System.out.println("Quantas horas você trabalha por mês:");
+        Scanner salario = new Scanner(System.in);
+        int hora = salario.nextInt();
+        System.out.println("Quanto você ganha por hora:");
+        double valor = salario.nextDouble();
+        double total = valor * hora;
+        System.out.println("Seu salário será de R$" + total);
+    }
+}
