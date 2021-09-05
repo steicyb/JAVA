@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class MaiorIdade {
+    public static void main(String[] args) {
+        System.out.println("Insira as idades:");
+        Scanner scan = new Scanner(System.in);
+
+        int[] idades = new int[10];
+        for (int i = 0; i < idades.length; i++){
+            System.out.println("Valor " + i);
+            idades[i] = scan.nextInt();
+        }
+        int maiores = 0;
+        for (int idade : idades) {
+            if (idade >= 18) {
+                maiores++;
+            }
+        }
+        System.out.println("Idades coletadas:");
+        for (int idade : idades){
+            System.out.println(idade);
+        }
+        System.out.println("Quantidade de pessoas maiores de idade: " + maiores);
+
+    }
+}
